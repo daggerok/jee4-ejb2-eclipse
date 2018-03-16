@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="1.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/application_1_4.xsd">
+	<display-name>jee4-ejb2</display-name>
+	<module id="ConnectorModule_1521159725479">
+		<connector>jee4-ejb2-connector.rar</connector>
+	</module>
+	<module id="EjbModule_1521159725485">
+		<ejb>jee4-ejb2-ejb.jar</ejb>
+	</module>
+	<module id="JavaClientModule_1521159725492">
+		<java>jee4-ejb2-client.jar</java>
+	</module>
+	<module id="WebModule_1521159725503">
+		<web>
+			<web-uri>jee4-ejb2-web.war</web-uri>
+			<context-root>jee4-ejb2-web</context-root>
+		</web>
+	</module>
+</application>

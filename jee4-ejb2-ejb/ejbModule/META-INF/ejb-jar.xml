@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="my-service-ejb-jar" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>jee4-ejb2-ejb</display-name>
+	<enterprise-beans>
+		<session>
+			<display-name>MyService</display-name>
+			<ejb-name>MyService</ejb-name>
+			<home>daggerok.ejb.api.MyServiceEjbHome</home>
+			<remote>daggerok.ejb.api.MyServiceEjbObject</remote>
+			<ejb-class>daggerok.ejb.impl.MyService</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+	</enterprise-beans>
+</ejb-jar>

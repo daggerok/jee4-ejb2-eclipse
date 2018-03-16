@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>jee4-ejb2-web</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MyServlet</display-name>
+		<servlet-name>MyServlet</servlet-name>
+		<servlet-class>daggerok.web.MyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServlet</servlet-name>
+		<url-pattern>/my-servlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<ejb-ref>
+		<ejb-ref-name>MyService</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<home>daggerok.api.MyServiceEjbHome</home>
+		<remote>daggerok.api.MyServiceEjbObject</remote>
+		<ejb-link>jee4-ejb2-ejb.jar#MyService</ejb-link>
+	</ejb-ref>
+</web-app>
